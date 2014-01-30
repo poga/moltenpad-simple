@@ -1,25 +1,28 @@
-html(ng-app="leve1up")
+html(ng-app="moltenpad")
   head
     title #{title}
     meta(charset="utf-8")
-    script(src="http://code.jquery.com/jquery-2.1.0.min.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js")
-    script(src="./javascript/semantic.min.js")
+    <!-- vendors -->
+    script(src="./bower_components/jquery/jquery.min.js")
+    script(src="./bower_components/angular/angular.min.js")
+    script(src="./bower_components/semantic/build/packaged/javascript/semantic.min.js")
+    link(rel="stylesheet" href="./bower_components/semantic/build/packaged/css/semantic.min.css")
+    link(rel="stylesheet" href="./bower_components/codemirror/lib/codemirror.css")
+    link(rel="stylesheet" href="./bower_components/firepad/dist/firepad.css")
+    script(src="./bower_components/angular-cookies/angular-cookies.min.js")
+    script(src="./bower_components/angularLocalStorage/src/angularLocalStorage.js")
+    script(src="./bower_components/firebase/firebase.js")
+    script(src="./bower_components/codemirror/lib/codemirror.js")
+    script(src="./bower_components/firepad/dist/firepad.js")
+    <!-- molten -->
+    script(src="./javascript/moltenpad.js")
+    <!-- custom styles -->
     link(rel="stylesheet" href="./stylesheets/screen.css" media="screen, projection" type="text/css")
     link(rel="stylesheet" href="./stylesheets/print.css" media="print" type="text/css")
     <!--[if IE]>
     link(rel="stylesheet" href="./stylesheets/ie.css" media="screen, projection" type="text/css")
     <![endif]-->
-    link(rel="stylesheet" href="./stylesheets/semantic.min.css")
-    link(rel="stylesheet" href="./stylesheets/codemirror.css")
-    link(rel="stylesheet" href="./stylesheets/firepad.css")
-    script(src="./javascript/angular-cookies.min.js")
-    script(src="./javascript/angularLocalStorage.js")
-    script(src="https://cdn.firebase.com/js/client/1.0.2/firebase.js")
-    script(src="./javascript/codemirror.js")
-    script(src="./javascript/firepad-min.js")
-    script(src="./javascript/leve1up.js")
-  body(ng-controller="leve1upCtrl")
+  body(ng-controller="moltenCtrl")
     .ui.grid
       .three.wide.column
         .side
@@ -27,8 +30,8 @@ html(ng-app="leve1up")
           !{ menu }
           p
             | Powered by 
-            a(href="http://github.com/poga/leve1up") leve1up
-            , markdown, and angularjs
+            a(href="http://github.com/poga/moltenpad") moltenpad
+            | .
           p
             a(href="https://twitter.com/share" class="twitter-share-button" data-size="large") Tweet
       .eight.wide.column

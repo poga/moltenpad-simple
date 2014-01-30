@@ -1,0 +1,31 @@
+{
+  "name": "moltenpad-simple",
+  "version": "0.0.0",
+  "homepage": "https://github.com/poga/moltenpad-simple",
+  "authors": [
+    "Poga Po <poga.bahamut@gmail.com>"
+  ],
+  "description": "simple theme for moltenpad",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.0",
+    "angular": "1.2.10",
+    "angular-cookies": "1.2.11-build.2192+sha.e2173f9",
+    "angularLocalStorage": "0.1.7",
+    "codemirror": "3.21.0",
+    "firebase": "1.0.2",
+    "firepad": "0.1.4",
+    "semantic": "0.12.3"
+  },
+  "resolutions": {
+    "angular": "1.2.10"
+  }
+}
