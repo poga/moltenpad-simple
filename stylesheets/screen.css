@@ -116,10 +116,14 @@ a:hover {
 }
 /* line 40, ../sass/screen.sass */
 .content .ui.checkbox label {
+  color: #666666;
+}
+/* line 42, ../sass/screen.sass */
+.content .ui.checkbox label a {
   color: #7ca1e8;
 }
 
-/* line 44, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 h1, h2, h3, h4 {
   color: #002b36;
   font-family: "PT Sans Caption", sans-serif;
@@ -129,22 +133,22 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
-/* line 52, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 h1 {
   font-size: 36px;
 }
 
-/* line 55, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 h2 {
   font-size: 30px;
 }
 
-/* line 58, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 h3 {
   font-size: 26px;
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 .side {
   position: fixed;
   width: inherit;
@@ -153,42 +157,42 @@ h3 {
   padding-right: 30px;
   font-family: "PT Sans Caption", sans-serif;
 }
-/* line 68, ../sass/screen.sass */
+/* line 70, ../sass/screen.sass */
 .side li {
   line-height: 1.7;
 }
-/* line 70, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 .side p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-style: italic;
 }
-/* line 74, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 .side ul {
   color: #666666;
   font-size: 16px;
   margin: 4px 0;
 }
-/* line 78, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 .side ul ul {
   padding-left: 20px;
 }
-/* line 80, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 .side ul ul ul {
   padding-left: 20px;
 }
 
-/* line 83, ../sass/screen.sass */
+/* line 85, ../sass/screen.sass */
 .progress {
   margin-bottom: 20px;
 }
 
-/* line 86, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 .rightColumn {
   margin-top: 0 !important;
 }
 
-/* line 89, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 .pad {
   background: url(../images/notebook.png);
   border-left: 1px solid #cccccc;
@@ -199,12 +203,12 @@ h3 {
   padding-right: 20px;
   padding-left: 10px;
 }
-/* line 98, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 .pad .firepad {
   margin-top: 50px;
   height: 90vh;
 }
-/* line 101, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 .pad .firepad .CodeMirror {
   background: transparent;
   margin: 20px;
