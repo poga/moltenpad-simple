@@ -28,10 +28,10 @@ html(ng-app="moltenpad")
       .two.wide.column
         .side
           mp-progress-bar
-          !{ menu }
+          != menu
       .eight.wide.column
         .content
-          !{ content }
+          != content
       .five.wide.column.rightColumn
         .pad
           #firepad
