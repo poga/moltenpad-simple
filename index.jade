@@ -15,14 +15,14 @@ html(ng-app="moltenpad")
     script(src="./bower_components/codemirror/lib/codemirror.js")
     script(src="./bower_components/firepad/dist/firepad.js")
     <!-- molten -->
-    script(src="./javascript/moltenpad.js")
+    script(src="./javascript/darepad.js")
     <!-- custom styles -->
     link(rel="stylesheet" href="./stylesheets/screen.css" media="screen, projection" type="text/css")
     link(rel="stylesheet" href="./stylesheets/print.css" media="print" type="text/css")
     <!--[if IE]>
     link(rel="stylesheet" href="./stylesheets/ie.css" media="screen, projection" type="text/css")
     <![endif]-->
-  body(ng-controller="moltenCtrl")
+  body(ng-controller="darepadCtrl")
     .ui.grid
       .one.wide.column
       .two.wide.column
@@ -30,22 +30,9 @@ html(ng-app="moltenpad")
           mp-progress-bar
           != menu
           mp-reset(label="清除紀錄")
-      .eight.wide.column
+      .twelve.wide.column
         .content
           != content
-      .five.wide.column.rightColumn
-        .pad
-          #firepad
-    script.
-      var firepadRef = new Firebase("#{firepadRef}");
-      var codeMirror = CodeMirror(document.getElementById('firepad'), { lineWrapping: true});
-
-      var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, { richTextToolbar: false, richTextShortcuts: false });
-      firepad.on('ready', function () {
-        if (firepad.isHistoryEmpty()) {
-          firepad.setHtml('這裡可以留言喔 <3')
-        }
-      });
 
     script.
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
