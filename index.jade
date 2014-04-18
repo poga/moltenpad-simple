@@ -1,4 +1,4 @@
-html(ng-app="moltenpad")
+html(ng-app="darepad")
   head
     title #{title}
     meta(charset="utf-8")
@@ -27,9 +27,9 @@ html(ng-app="moltenpad")
       .one.wide.column
       .two.wide.column
         .side
-          mp-progress-bar
+          dp-progress-bar
           != menu
-          mp-reset(label="清除紀錄")
+          dp-reset(label="清除紀錄")
       .twelve.wide.column
         .content
           != content
